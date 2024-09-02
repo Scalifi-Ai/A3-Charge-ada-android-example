@@ -44,3 +44,14 @@ val config = AdaConfig(
 )
 parent.addView(AdaView(context, config))
 ```
+
+4. Add Google Mobile Ads application ID to `AndroidManifest.xml`:
+```xml
+<manifest>
+    <application>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6746653557725812~6678258028"/>
+    </application>
+</manifest>
+```
