@@ -35,11 +35,12 @@ fun MainScreen(modifier: Modifier = Modifier) {
     AndroidView(
         factory = {
             val config = AdaConfig(
-                environment = "wlgo1.dev4",
                 pubId = BuildConfig.AV_PUB_ID,
                 tagId = BuildConfig.AV_TAG_ID,
             )
-            AdaView(it, config)
+            val view = AdaView(it)
+            view.load(config)
+            view
         },
         modifier = modifier.fillMaxSize(),
     )
