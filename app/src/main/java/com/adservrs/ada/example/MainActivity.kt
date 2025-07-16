@@ -10,6 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.viewinterop.AndroidView
 import com.adservrs.ada.AdaConfig
+import com.adservrs.ada.AdaScaleType
 import com.adservrs.ada.AdaView
 import com.adservrs.ada.example.ui.theme.AdaExampleTheme
 
