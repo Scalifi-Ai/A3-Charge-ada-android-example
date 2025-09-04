@@ -36,8 +36,8 @@ fun MainScreen(modifier: Modifier = Modifier) {
     AndroidView(
         factory = {
             val config = AdaConfig(
-                pubId = BuildConfig.AV_PUB_ID,
-                tagId = BuildConfig.AV_TAG_ID,
+                pubId = "68540ce88ee8d56dbe0d78a6",
+                tagId = "687e2ebbaeb2d8dd1003214c",
             )
             val view = AdaView(it)
             view.load(config)
